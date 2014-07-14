@@ -1,5 +1,6 @@
 ---
 - hosts: all
-  tasks:
-    - name: PING
-      command: /bin/echo hello 
+  user: vagrant
+  sudo: True
+  roles:
+    - mongodb
