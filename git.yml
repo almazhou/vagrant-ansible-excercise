@@ -5,3 +5,6 @@
   tasks:
     - name: Create directory under /srv for thingy
       file: path=/srv/thingy state=directory mode=755
+    - name: Git checkout from github
+      git: repo=https://github.com/almazhou/rails-product.git
+        dest=/srv/thingy
