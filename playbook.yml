@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: PING
+      command: /bin/echo hello 
