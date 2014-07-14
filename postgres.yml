@@ -1,0 +1,7 @@
+---
+- name: 'PostgreSQL Playbook'
+  hosts: all
+  user: vagrant
+  sudo: True
+  roles:
+    - postgresql
