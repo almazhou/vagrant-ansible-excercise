@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
     config.vm.provision "ansible" do |ansible|
-        ansible.playbook = "postgres.yml"
+        ansible.playbook = "git.yml"
         ansible.verbose = "vvvv"
     end
 end
